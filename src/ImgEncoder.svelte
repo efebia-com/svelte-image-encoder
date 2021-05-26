@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	export let src = '';
 	export let url = '';
+	export let type = '';
 	export let quality = 0.5;
 	export let width = 256;
 	export let height = 256;
@@ -46,7 +47,7 @@
 		},
 		setDragging(d) {
 			if (!realTime && d === false)
-				url = canvas.toDataURL('image/jpeg', quality);
+				url = canvas.toDataURL(type, quality);
 			dragging = d;
 		},
 		getDragging() {
@@ -72,7 +73,7 @@
 		ctx.scale(scale, scale);
 		ctx.drawImage(img, 0, 0);
 		if (realTime || !dragging)
-			url = canvas.toDataURL('image/jpeg', quality);
+			url = canvas.toDataURL(type, quality);
 	}
 	$: img && (img.crossOrigin = crossOrigin ? 'anonymous' : null);
 	$: img && (img.src = src);
