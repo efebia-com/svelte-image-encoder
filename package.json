@@ -1,5 +1,5 @@
 {
-  "name": "svelte-image-encoder",
+  "name": "svelte-image-encoder-save-type",
   "version": "1.2.5",
   "description": "A <ImgEncoder> Svelte component for editing and compressing profile pictures before upload to a server",
   "svelte": "src/ImgEncoder.svelte",
@@ -17,13 +17,13 @@
     "rollup": "^1.14.6",
     "rollup-plugin-commonjs": "^10.0.0",
     "rollup-plugin-node-resolve": "^5.0.1",
-    "rollup-plugin-svelte": "^5.1.0",
+    "rollup-plugin-svelte": "^6.1.1",
+    "rollup-plugin-typescript2": "^0.21.1",
     "serve-handler": "^6.0.1",
     "svelte": "^3.5.1",
-    "typescript": "^3.5.1",
-    "rollup-plugin-typescript2": "^0.21.1"
+    "typescript": "^3.5.1"
   },
-  "repository": "https://github.com/saabi/svelte-image-encoder",
+  "repository": "https://github.com/efebia-com/svelte-image-encoder",
   "author": "Sebastian Ferreyra Pons",
   "license": "ISC",
   "keywords": [
