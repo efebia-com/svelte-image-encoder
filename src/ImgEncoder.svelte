@@ -75,7 +75,7 @@
 
 	$: img && (img.crossOrigin = crossOrigin ? "anonymous" : null);
 	$: img && (img.src = src);
-	$: src && (scale = 1);
+	$: src && (scale = 0);
 	$: quality, width, height, offsetX, offsetY, scale, redraw();
 
 	onMount(() => {
